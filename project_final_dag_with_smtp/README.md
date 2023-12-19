@@ -1,6 +1,6 @@
 #  ETL with airflow and smtp
 ETL that retrieves data from an unnoficial api that contains
-statistics of the argentinian central bank.
+statistics of the argentinian central bank. It's scheduled on a daily basis. If the etl succeds then the recipients of the script will get an email with the number of rows inserted per table. If it fails, then the mail recipients will get a notification that the etl failed.
 
 ## To check if it works:
     - See the screenshots from the folder "proof_it_works". 
